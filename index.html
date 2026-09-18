@@ -6,7 +6,6 @@
 <title>Spontaneous Dialect-Aware Speech Corpus for Dakhini — Interspeech 2026</title>
 <meta name="description" content="Audio samples from a spontaneous, dialect-aware speech corpus for Dakhini, a low-resource Southern Indo-Aryan language. Interspeech 2026, Sydney.">
 
-<!-- Social preview: replace the URL and add preview.png to the repo, or delete this block -->
 <meta property="og:title" content="Spontaneous Dialect-Aware Speech Corpus for Dakhini">
 <meta property="og:description" content="Audio samples — Interspeech 2026, ICC Sydney.">
 <meta property="og:type" content="website">
@@ -43,7 +42,6 @@
   }
 
   * { box-sizing: border-box; }
-
   html { -webkit-text-size-adjust: 100%; }
 
   body {
@@ -56,198 +54,105 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  .wrap {
-    max-width: 46rem;
-    margin: 0 auto;
-    padding: 3.5rem 1.5rem 5rem;
-  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
 
   a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   a:hover { text-decoration-color: var(--spk-a); }
 
-  :focus-visible {
-    outline: 2px solid var(--focus);
-    outline-offset: 3px;
-    border-radius: 2px;
-  }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
 
   /* ---------- Masthead ---------- */
 
   .endonym {
-    font-size: 1.9rem;
-    line-height: 1;
-    color: var(--spk-a);
-    margin: 0 0 1.4rem;
-    font-weight: 400;
+    font-size: 1.9rem; line-height: 1; color: var(--spk-a);
+    margin: 0 0 1.4rem; font-weight: 400;
   }
 
   h1 {
-    font-family: var(--serif);
     font-weight: 600;
     font-size: clamp(1.7rem, 4.4vw, 2.45rem);
-    line-height: 1.18;
-    letter-spacing: -0.012em;
-    margin: 0 0 0.35rem;
-    max-width: 22ch;
+    line-height: 1.18; letter-spacing: -0.012em;
+    margin: 0 0 0.35rem; max-width: 22ch;
   }
 
   .subtitle {
     font-size: clamp(1.05rem, 2.4vw, 1.3rem);
-    font-style: italic;
-    color: var(--ink-soft);
-    margin: 0 0 1.9rem;
-    line-height: 1.35;
+    font-style: italic; color: var(--ink-soft);
+    margin: 0 0 1.9rem; line-height: 1.35;
   }
 
-  .authors {
-    font-family: var(--sans);
-    font-size: 1rem;
-    margin: 0 0 0.5rem;
-    line-height: 1.7;
-  }
+  .authors { font-family: var(--sans); font-size: 1rem; margin: 0 0 0.5rem; line-height: 1.7; }
   .authors .name { font-weight: 500; }
   .authors sup { font-weight: 400; font-size: 0.72em; color: var(--ink-soft); }
 
-  .affil {
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-    margin: 0 0 1.6rem;
-    line-height: 1.6;
-  }
+  .affil { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-soft); margin: 0 0 1.6rem; line-height: 1.6; }
   .affil p { margin: 0; }
 
   .venue {
-    font-family: var(--sans);
-    font-size: 0.95rem;
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-    padding: 0.85rem 0;
-    margin: 0 0 1.8rem;
+    font-family: var(--sans); font-size: 0.95rem;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    padding: 0.85rem 0; margin: 0 0 1.8rem;
   }
   .venue strong { font-weight: 600; }
   .venue span { display: block; color: var(--ink-soft); font-size: 0.87rem; margin-top: 0.15rem; }
 
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin: 0 0 3.2rem;
-  }
+  .links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0 0 3.2rem; }
   .links a {
-    font-family: var(--sans);
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--rule);
-    border-radius: 999px;
+    font-family: var(--sans); font-size: 0.9rem; font-weight: 500;
+    text-decoration: none; padding: 0.5rem 1rem;
+    border: 1px solid var(--rule); border-radius: 999px;
     background: var(--paper-2);
     transition: border-color .15s ease, color .15s ease;
   }
   .links a:hover { border-color: var(--spk-a); color: var(--spk-a); }
+
+  /* ---------- Abstract ---------- */
+
+  .abstract { font-size: 1rem; line-height: 1.7; max-width: 66ch; margin: 0 0 3.2rem; }
+  .abstract p { margin: 0 0 0.9rem; }
 
   /* ---------- Corpus figures ---------- */
 
   .figures {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-    gap: 1.5rem 1rem;
-    margin: 0 0 3.4rem;
+    gap: 1.5rem 1rem; margin: 0 0 3.4rem;
   }
   .figures div { border-left: 2px solid var(--rule); padding-left: 0.85rem; }
-  .figures dt {
-    font-family: var(--sans);
-    font-size: 0.78rem;
-    color: var(--ink-soft);
-    margin-bottom: 0.15rem;
-  }
-  .figures dd {
-    margin: 0;
-    font-size: 1.45rem;
-    font-weight: 600;
-    line-height: 1.1;
-    font-variant-numeric: tabular-nums;
-  }
+  .figures dt { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-soft); margin-bottom: 0.15rem; }
+  .figures dd { margin: 0; font-size: 1.45rem; font-weight: 600; line-height: 1.1; font-variant-numeric: tabular-nums; }
 
   /* ---------- Samples ---------- */
 
-  h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0 0 0.4rem;
-  }
-  .section-note {
-    font-family: var(--sans);
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-    margin: 0 0 2.2rem;
-    max-width: 58ch;
-  }
+  h2 { font-size: 1.2rem; font-weight: 600; margin: 0 0 0.4rem; }
+  .section-note { font-family: var(--sans); font-size: 0.9rem; color: var(--ink-soft); margin: 0 0 2.2rem; max-width: 62ch; }
 
-  .sample {
-    border-left: 3px solid var(--spk-a);
-    padding: 0 0 0 1.25rem;
-    margin: 0 0 2.6rem;
-  }
+  .sample { border-left: 3px solid var(--spk-a); padding: 0 0 0 1.25rem; margin: 0 0 2.6rem; }
   .sample.b { border-left-color: var(--spk-b); }
 
-  .sample-head {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.5rem 0.9rem;
-    margin-bottom: 0.45rem;
-  }
-  .region {
-    font-family: var(--sans);
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--spk-a);
-  }
-  .sample.b .region { color: var(--spk-b); }
-  .meta {
-    font-family: var(--sans);
-    font-size: 0.8rem;
-    color: var(--ink-soft);
-    font-variant-numeric: tabular-nums;
+  .sample-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 0.9rem; margin-bottom: 0.45rem; }
+  .speaker { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; color: var(--spk-a); }
+  .sample.b .speaker { color: var(--spk-b); }
+  .meta { font-family: var(--sans); font-size: 0.8rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+
+  .sample h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.3rem; line-height: 1.35; }
+  .sample p.desc { margin: 0 0 0.75rem; color: var(--ink-soft); font-size: 0.95rem; max-width: 62ch; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 0.85rem; padding: 0; list-style: none; }
+  .tags li {
+    font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
+    border: 1px solid var(--rule); border-radius: 3px;
+    padding: 0.15rem 0.45rem; color: var(--ink-soft);
+    background: var(--paper-2);
   }
 
-  .sample h3 {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 0 0 0.3rem;
-    line-height: 1.35;
-  }
-  .sample p.desc {
-    margin: 0 0 0.9rem;
-    color: var(--ink-soft);
-    font-size: 0.95rem;
-    max-width: 62ch;
-  }
-
-  audio {
-    display: block;
-    width: 100%;
-    max-width: 34rem;
-    height: 40px;
-    margin-bottom: 0.9rem;
-  }
+  audio { display: block; width: 100%; max-width: 34rem; height: 40px; margin-bottom: 0.9rem; }
 
   .transcript {
-    background: var(--paper-2);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    padding: 0.85rem 1rem;
-    max-width: 38rem;
+    background: var(--paper-2); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 0.85rem 1rem; max-width: 38rem;
   }
-  .transcript summary {
-    font-family: var(--sans);
-    font-size: 0.82rem;
-    color: var(--ink-soft);
-    cursor: pointer;
-    list-style: none;
-  }
+  .transcript summary { font-family: var(--sans); font-size: 0.82rem; color: var(--ink-soft); cursor: pointer; list-style: none; }
   .transcript summary::-webkit-details-marker { display: none; }
   .transcript summary::before { content: "+ "; }
   .transcript[open] summary::before { content: "– "; }
@@ -255,81 +160,51 @@
 
   .turn { margin: 0 0 0.6rem; font-size: 0.95rem; line-height: 1.55; }
   .turn:last-child { margin-bottom: 0; }
-  .turn .who {
-    font-family: var(--sans);
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: var(--spk-a);
-    display: block;
-  }
-  .turn.b .who { color: var(--spk-b); }
+  .turn .std { color: var(--ink-soft); font-size: 0.85rem; font-family: var(--sans); display: block; }
   .turn .gloss { color: var(--ink-soft); font-style: italic; }
 
-  .nojs {
-    font-family: var(--sans);
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-  }
+  .nojs { font-family: var(--sans); font-size: 0.85rem; color: var(--ink-soft); }
+
+  /* ---------- Tag key ---------- */
+
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 0.45rem 0.7rem 0.45rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: var(--sans); font-size: 0.78rem; font-weight: 600; color: var(--ink-soft); }
+  td.code { font-family: var(--sans); font-weight: 600; white-space: nowrap; }
 
   /* ---------- Citation ---------- */
 
-  .cite-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 0 0 0.7rem;
-  }
+  .cite-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0 0 0.7rem; }
   #copy-bib {
-    font-family: var(--sans);
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: var(--ink);
-    background: var(--paper-2);
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    padding: 0.35rem 0.85rem;
-    cursor: pointer;
+    font-family: var(--sans); font-size: 0.82rem; font-weight: 500;
+    color: var(--ink); background: var(--paper-2);
+    border: 1px solid var(--rule); border-radius: 999px;
+    padding: 0.35rem 0.85rem; cursor: pointer;
   }
   #copy-bib:hover { border-color: var(--spk-a); color: var(--spk-a); }
 
   pre {
-    background: var(--paper-2);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    padding: 1rem;
-    overflow-x: auto;
+    background: var(--paper-2); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 1rem; overflow-x: auto;
     font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    margin: 0;
+    font-size: 0.8rem; line-height: 1.6; margin: 0;
   }
 
   footer {
-    margin-top: 4rem;
-    padding-top: 1.4rem;
-    border-top: 1px solid var(--rule);
-    font-family: var(--sans);
-    font-size: 0.83rem;
-    color: var(--ink-soft);
+    margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid var(--rule);
+    font-family: var(--sans); font-size: 0.83rem; color: var(--ink-soft);
   }
-  footer p { margin: 0 0 0.4rem; }
+  footer p { margin: 0 0 0.5rem; max-width: 66ch; }
 
-  hr.div {
-    border: 0;
-    border-top: 1px solid var(--rule);
-    margin: 3.4rem 0;
-  }
+  hr.div { border: 0; border-top: 1px solid var(--rule); margin: 3.4rem 0; }
 
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; animation: none !important; }
-  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
 <body>
 <main class="wrap">
 
-  <!-- Dakhini endonym in Perso-Arabic script. Delete this line if you'd rather not open with it. -->
+  <!-- Dakhini endonym in Perso-Arabic script. Delete this line if you'd rather the title lead. -->
   <p class="endonym" lang="dcc" dir="rtl">دکنی</p>
 
   <h1>Spontaneous Dialect-Aware Speech Corpus for Low-Resource Dakhini</h1>
@@ -340,8 +215,8 @@
     <span class="name">Priyanka Kommagouni</span><sup>2,*</sup>
   </p>
   <div class="affil">
-    <p><sup>1</sup>Affiliation one — department, institution, city</p>
-    <p><sup>2</sup>Affiliation two — department, institution, city</p>
+    <p><sup>1</sup>Language Technologies Research Center, IIIT Hyderabad, India</p>
+    <p><sup>2</sup>Independent Researcher</p>
     <p><sup>*</sup>Equal contribution</p>
   </div>
 
@@ -354,14 +229,23 @@
     <a href="#samples">Listen to samples</a>
     <a href="paper.pdf">Read the paper</a>
     <a href="poster.pdf">View the poster</a>
-    <a href="#">Request corpus access</a>
+    <a href="#access">Request corpus access</a>
   </nav>
 
+  <div class="abstract">
+    <p>Dakhini is a contact variety of the Deccan region that blends Persian, Old Urdu, Kannada,
+      Marathi and Telugu. It is widely spoken but almost absent from curated speech resources.
+      This study examines what it takes to collect it honestly: telephonic conversations between
+      familiar speakers, an asymmetric awareness protocol to reduce the Observer's Effect, and a
+      rule-based annotation layer that treats mismatches between standard-Hindi ASR output and the
+      audio as evidence of dialect rather than as transcription error.</p>
+  </div>
+
   <dl class="figures">
-    <div><dt>Recorded speech</dt><dd>00 h</dd></div>
-    <div><dt>Speakers</dt><dd>00</dd></div>
-    <div><dt>Dialect regions</dt><dd>0</dd></div>
-    <div><dt>Dialogue turns</dt><dd>0,000</dd></div>
+    <div><dt>Speakers</dt><dd>160</dd></div>
+    <div><dt>Age range</dt><dd>17–50</dd></div>
+    <div><dt>Male : female</dt><dd>70:30</dd></div>
+    <div><dt>Retained per session</dt><dd>~5 min</dd></div>
   </dl>
 
   <hr class="div">
@@ -369,30 +253,29 @@
   <section id="samples">
     <h2>Audio samples</h2>
     <p class="section-note">
-      Unscripted conversations between paired speakers, recorded in everyday settings.
-      Transcripts are given in Dakhini with an English gloss. Files play in the browser;
-      nothing is downloaded until you press play.
+      Target-speaker segments from telephonic conversations between familiar mixed-gender pairs.
+      The anchor speaker's audio is excluded. Each clip lists the rule-based tags that fire in it;
+      transcripts give the Dakhini realisation, the standard Hindi/Urdu form it diverges from, and
+      an English gloss. Nothing downloads until you press play.
     </p>
 
     <!-- ================= SAMPLE 1 ================= -->
     <article class="sample">
       <div class="sample-head">
-        <span class="region">Hyderabad</span>
-        <span class="meta">2 speakers, F/F · 1:24 · 48 kHz</span>
+        <span class="speaker">Speaker 00 · F, 00</span>
+        <span class="meta">Old City · lower-income · 0:00</span>
       </div>
-      <h3>Dummy title one — bargaining at a vegetable stall</h3>
-      <p class="desc">Dummy description. Two speakers negotiate over a purchase; note the dialect-specific
-        verb endings and the code-switch into Telugu at the close.</p>
+      <h3>Dummy title one — recipe exchange</h3>
+      <p class="desc">Dummy description. Dense consonant assimilation and dropped auxiliaries across
+        a sustained narrative stretch.</p>
+      <ul class="tags"><li>PA</li><li>MAUX</li><li>LD</li></ul>
       <audio controls preload="metadata" src="audio/dummy_01.wav">
         <p class="nojs">Your browser can't play this file. <a href="audio/dummy_01.wav">Download it instead.</a></p>
       </audio>
       <details class="transcript">
         <summary>Transcript</summary>
-        <p class="turn"><span class="who">Speaker A</span>
-          Dummy Dakhini transcript line goes here.
-          <span class="gloss">Dummy English gloss goes here.</span></p>
-        <p class="turn b"><span class="who">Speaker B</span>
-          Dummy Dakhini transcript line goes here.
+        <p class="turn">Dummy Dakhini transcript line goes here.
+          <span class="std">Standard: dummy standard Hindi/Urdu form.</span>
           <span class="gloss">Dummy English gloss goes here.</span></p>
       </details>
     </article>
@@ -400,22 +283,20 @@
     <!-- ================= SAMPLE 2 ================= -->
     <article class="sample b">
       <div class="sample-head">
-        <span class="region">Bidar</span>
-        <span class="meta">2 speakers, M/F · 0:58 · 48 kHz</span>
+        <span class="speaker">Speaker 00 · M, 00</span>
+        <span class="meta">Old City · middle-income · 0:00</span>
       </div>
-      <h3>Dummy title two — recalling a family wedding</h3>
-      <p class="desc">Dummy description. Narrative speech with overlapping turns and frequent
-        backchannelling.</p>
+      <h3>Dummy title two — talking about a recent film</h3>
+      <p class="desc">Dummy description. Lexical Dakhini items with no standard Urdu equivalent
+        appear throughout.</p>
+      <ul class="tags"><li>LD</li><li>PV</li><li>SF</li></ul>
       <audio controls preload="metadata" src="audio/dummy_02.wav">
         <p class="nojs">Your browser can't play this file. <a href="audio/dummy_02.wav">Download it instead.</a></p>
       </audio>
       <details class="transcript">
         <summary>Transcript</summary>
-        <p class="turn"><span class="who">Speaker A</span>
-          Dummy Dakhini transcript line goes here.
-          <span class="gloss">Dummy English gloss goes here.</span></p>
-        <p class="turn b"><span class="who">Speaker B</span>
-          Dummy Dakhini transcript line goes here.
+        <p class="turn">Dummy Dakhini transcript line goes here.
+          <span class="std">Standard: dummy standard Hindi/Urdu form.</span>
           <span class="gloss">Dummy English gloss goes here.</span></p>
       </details>
     </article>
@@ -423,22 +304,20 @@
     <!-- ================= SAMPLE 3 ================= -->
     <article class="sample">
       <div class="sample-head">
-        <span class="region">Kalaburagi</span>
-        <span class="meta">2 speakers, M/M · 1:47 · 48 kHz</span>
+        <span class="speaker">Speaker 00 · F, 00</span>
+        <span class="meta">early-settler family · 0:00</span>
       </div>
-      <h3>Dummy title three — directions across the old city</h3>
-      <p class="desc">Dummy description. Spatial description task; illustrates the dialect's
-        postpositional system.</p>
+      <h3>Dummy title three — neighbourhood news</h3>
+      <p class="desc">Dummy description. Pronoun neutralisation and the participial <em>ko</em>
+        construction in sequential actions.</p>
+      <ul class="tags"><li>MP</li><li>MP-KO</li><li>PA</li></ul>
       <audio controls preload="metadata" src="audio/dummy_03.wav">
         <p class="nojs">Your browser can't play this file. <a href="audio/dummy_03.wav">Download it instead.</a></p>
       </audio>
       <details class="transcript">
         <summary>Transcript</summary>
-        <p class="turn"><span class="who">Speaker A</span>
-          Dummy Dakhini transcript line goes here.
-          <span class="gloss">Dummy English gloss goes here.</span></p>
-        <p class="turn b"><span class="who">Speaker B</span>
-          Dummy Dakhini transcript line goes here.
+        <p class="turn">Dummy Dakhini transcript line goes here.
+          <span class="std">Standard: dummy standard Hindi/Urdu form.</span>
           <span class="gloss">Dummy English gloss goes here.</span></p>
       </details>
     </article>
@@ -446,22 +325,20 @@
     <!-- ================= SAMPLE 4 ================= -->
     <article class="sample b">
       <div class="sample-head">
-        <span class="region">Chhatrapati Sambhajinagar</span>
-        <span class="meta">2 speakers, F/M · 1:12 · 48 kHz</span>
+        <span class="speaker">Speaker 00 · M, 00</span>
+        <span class="meta">higher education · 0:00</span>
       </div>
-      <h3>Dummy title four — discussing the day's work</h3>
-      <p class="desc">Dummy description. Spontaneous exchange recorded in a noisier setting;
-        useful for robustness evaluation.</p>
+      <h3>Dummy title four — code-switching under formality pressure</h3>
+      <p class="desc">Dummy description. An educated speaker drifting toward standard Hindi/Urdu
+        mid-conversation, then back — the shift this corpus was designed to capture.</p>
+      <ul class="tags"><li>SF</li><li>MAUX</li></ul>
       <audio controls preload="metadata" src="audio/dummy_04.wav">
         <p class="nojs">Your browser can't play this file. <a href="audio/dummy_04.wav">Download it instead.</a></p>
       </audio>
       <details class="transcript">
         <summary>Transcript</summary>
-        <p class="turn"><span class="who">Speaker A</span>
-          Dummy Dakhini transcript line goes here.
-          <span class="gloss">Dummy English gloss goes here.</span></p>
-        <p class="turn b"><span class="who">Speaker B</span>
-          Dummy Dakhini transcript line goes here.
+        <p class="turn">Dummy Dakhini transcript line goes here.
+          <span class="std">Standard: dummy standard Hindi/Urdu form.</span>
           <span class="gloss">Dummy English gloss goes here.</span></p>
       </details>
     </article>
@@ -469,22 +346,20 @@
     <!-- ================= SAMPLE 5 ================= -->
     <article class="sample">
       <div class="sample-head">
-        <span class="region">Bengaluru</span>
-        <span class="meta">2 speakers, F/F · 1:03 · 48 kHz</span>
+        <span class="speaker">Speaker 00 · F, 00</span>
+        <span class="meta">Old City · lower-income · 0:00</span>
       </div>
-      <h3>Dummy title five — comparing two recipes</h3>
-      <p class="desc">Dummy description. Extended single-speaker stretches with lexical items
-        specific to the urban variety.</p>
+      <h3>Dummy title five — vowel-length reduction</h3>
+      <p class="desc">Dummy description. Shortened vowels in unaccented syllables that standard-Hindi
+        ASR silently normalises away.</p>
+      <ul class="tags"><li>PV</li><li>PA</li></ul>
       <audio controls preload="metadata" src="audio/dummy_05.wav">
         <p class="nojs">Your browser can't play this file. <a href="audio/dummy_05.wav">Download it instead.</a></p>
       </audio>
       <details class="transcript">
         <summary>Transcript</summary>
-        <p class="turn"><span class="who">Speaker A</span>
-          Dummy Dakhini transcript line goes here.
-          <span class="gloss">Dummy English gloss goes here.</span></p>
-        <p class="turn b"><span class="who">Speaker B</span>
-          Dummy Dakhini transcript line goes here.
+        <p class="turn">Dummy Dakhini transcript line goes here.
+          <span class="std">Standard: dummy standard Hindi/Urdu form.</span>
           <span class="gloss">Dummy English gloss goes here.</span></p>
       </details>
     </article>
@@ -492,26 +367,43 @@
     <!-- ================= SAMPLE 6 ================= -->
     <article class="sample b">
       <div class="sample-head">
-        <span class="region">Chennai</span>
-        <span class="meta">2 speakers, M/F · 1:31 · 48 kHz</span>
+        <span class="speaker">Speaker 00 · M, 00</span>
+        <span class="meta">middle-income · 0:00</span>
       </div>
-      <h3>Dummy title six — an argument about cricket</h3>
-      <p class="desc">Dummy description. Rapid turn-taking and disagreement markers; the most
-        overlapped file in the released subset.</p>
+      <h3>Dummy title six — high tag density</h3>
+      <p class="desc">Dummy description. A segment flagged on several rules at once, prioritised for
+        detailed human review under the tag-density triage.</p>
+      <ul class="tags"><li>PA</li><li>PV</li><li>MAUX</li><li>LD</li></ul>
       <audio controls preload="metadata" src="audio/dummy_06.wav">
         <p class="nojs">Your browser can't play this file. <a href="audio/dummy_06.wav">Download it instead.</a></p>
       </audio>
       <details class="transcript">
         <summary>Transcript</summary>
-        <p class="turn"><span class="who">Speaker A</span>
-          Dummy Dakhini transcript line goes here.
-          <span class="gloss">Dummy English gloss goes here.</span></p>
-        <p class="turn b"><span class="who">Speaker B</span>
-          Dummy Dakhini transcript line goes here.
+        <p class="turn">Dummy Dakhini transcript line goes here.
+          <span class="std">Standard: dummy standard Hindi/Urdu form.</span>
           <span class="gloss">Dummy English gloss goes here.</span></p>
       </details>
     </article>
 
+  </section>
+
+  <hr class="div">
+
+  <section>
+    <h2>Tag key</h2>
+    <p class="section-note">The rule-based detection modules applied during annotation.</p>
+    <table>
+      <thead><tr><th>Tag</th><th>Detects</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td class="code">PA</td><td>Consonant assimilation</td><td><em>ittaa</em> for <em>itnaa</em></td></tr>
+        <tr><td class="code">PV</td><td>Vowel-length reduction</td><td><em>admii</em> for <em>aadmii</em></td></tr>
+        <tr><td class="code">MAUX</td><td>Auxiliary omission</td><td><em>woh gaye</em> for <em>woh gaye hai</em></td></tr>
+        <tr><td class="code">MP-KO</td><td>Participial <em>ko</em> for <em>kar</em></td><td><em>khaa ko aaya</em></td></tr>
+        <tr><td class="code">MP</td><td>Pronoun variation</td><td><em>mere se</em> for <em>mujh se</em></td></tr>
+        <tr><td class="code">SF</td><td>Formality register marker</td><td><em>tum / tu</em> where standard requires <em>aap</em></td></tr>
+        <tr><td class="code">LD</td><td>Dakhini-specific lexical item</td><td><em>kaiku</em>, <em>nakko</em>, <em>manjhe</em></td></tr>
+      </tbody>
+    </table>
   </section>
 
   <hr class="div">
@@ -532,10 +424,14 @@
 }</pre>
   </section>
 
-  <footer>
-    <p>Recordings are released for research use. Speakers gave informed consent; identifying
-      details have been removed.</p>
-    <p>Contact: your.email@institution.edu</p>
+  <footer id="access">
+    <p><strong>Participants and consent.</strong> Every speaker was debriefed after recording and
+      gave explicit informed consent before any audio was retained. Sessions where consent was
+      withheld were discarded in full. Participants may withdraw their data at any time.</p>
+    <p><strong>Access.</strong> The clips on this page are released for research use. Access to the
+      wider corpus is by request, subject to the consent terms above.</p>
+    <p>Anindita Mondal — anindita.mondal@research.iiit.ac.in<br>
+       Priyanka Kommagouni — parvathipriyanka86@gmail.com</p>
   </footer>
 
 </main>
@@ -552,7 +448,6 @@
     });
   });
 
-  // Only one sample plays at a time.
   var players = document.querySelectorAll('audio');
   players.forEach(function (a) {
     a.addEventListener('play', function () {

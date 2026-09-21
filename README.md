@@ -1,6 +1,4 @@
-# Spontaneous Dialect-Aware Speech Corpus for Low-Resource Dakhini
-
-**A Southern Indo-Aryan Language: Methods, Challenges, and Insights**
+# Spontaneous Dialect-Aware Speech Corpus for Low-Resource Dakhini, A Southern Indo-Aryan Language: Methods, Challenges, and Insights
 
 Anindita Mondal<sup>1,\*</sup>, Priyanka Kommagouni<sup>2,\*</sup>
 

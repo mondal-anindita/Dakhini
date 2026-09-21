@@ -30,7 +30,7 @@ linguistically inauthentic is worse than useless for dialect documentation.
 The paper's response has three parts:
 
 - **An asymmetric awareness protocol.** Recordings are telephonic conversations between pairs who
-  already know each other. Only one participant — the *anchor speaker* — knows about the recording
+  already know each other. Only one participant i.e. the *anchor speaker* knows about the recording
   in advance and steers the conversation toward a loose menu of casual topics. The other
   participant is fully debriefed afterwards, and audio is retained only on explicit consent.
 - **Telephony over studio.** Reduced signal fidelity is accepted deliberately in exchange for
@@ -54,7 +54,7 @@ The paper's response has three parts:
 | Languages spoken | Dakhini, Urdu, Telugu, English (varying proficiency) |
 | Recording modality | Telephonic |
 | Session length | ~20 minutes |
-| Retained per session | ~5 minutes of representative conversational speech |
+| Retained per session | ~2-5 minutes of representative conversational speech |
 | Pair composition | One male, one female speaker, already familiar with each other |
 
 The mixed-gender pair design serves two purposes at once: it reflects naturalistic interaction in
@@ -117,20 +117,11 @@ on dialectal speech over successive passes.
 ├── paper.pdf         Camera-ready paper
 ├── poster.pdf        Interspeech 2026 poster
 └── audio/            Audio samples featured on the demo page
-    ├── dummy_01.wav
-    ├── dummy_02.wav
+    ├── dakhini_01.wav
+    ├── dakhini_02.wav
     └── ...
 ```
 
-## Viewing locally
-
-The page is a single static HTML file with no build step. Open `index.html` directly, or serve it
-if you want the audio paths to behave exactly as they will in production:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
 
 ## Ethics and consent
 
@@ -149,15 +140,11 @@ The covert-recording-with-retrospective-consent design follows established socio
 grounded in Labov's work, which showed that prior awareness of recording systematically alters
 speaker behaviour in ways that undermine dialectal authenticity.
 
-## Data availability
-
-The samples in `audio/` are released for research use. Access to the wider corpus is by request and
-is subject to the consent terms above. Please contact the authors.
 
 ## Citation
 
 ```bibtex
-@inproceedings{mondal2026dakhini,
+@inproceedings{2026dakhini,
   title     = {Spontaneous Dialect-Aware Speech Corpus for Low-Resource Dakhini,
                A Southern Indo-Aryan Language: Methods, Challenges, and Insights},
   author    = {Mondal, Anindita and Kommagouni, Priyanka},
@@ -178,4 +165,5 @@ corpus.
 ## Contact
 
 Anindita Mondal — anindita.mondal@research.iiit.ac.in
+
 Priyanka Kommagouni — parvathipriyanka86@gmail.com

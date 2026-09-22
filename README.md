@@ -1,10 +1,11 @@
 # Spontaneous Dialect-Aware Speech Corpus for Low-Resource Dakhini, A Southern Indo-Aryan Language: Methods, Challenges, and Insights
 
-Anindita Mondal<sup>1,\*</sup>, Priyanka Kommagouni<sup>2,\*</sup>
+Anindita Mondal<sup>1,\*</sup>, Priyanka Kommagouni<sup>2,\*</sup>, <sup>\*</sup> Equal contribution
 
 <sup>1</sup> Language Technologies Research Center, IIIT Hyderabad, India
+
 <sup>2</sup> Independent Researcher
-<sup>\*</sup> Equal contribution
+
 
 Accepted at **Interspeech 2026**, ICC Sydney, Australia, 28 September – 1 October 2026.
 

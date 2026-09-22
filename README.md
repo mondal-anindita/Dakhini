@@ -8,7 +8,7 @@ Anindita Mondal<sup>1,\*</sup>, Priyanka Kommagouni<sup>2,\*</sup>
 
 Accepted at **Interspeech 2026**, ICC Sydney, Australia, 28 September – 1 October 2026.
 
-**Demo page:** https://USERNAME.github.io/REPO/ — *(replace once Pages is live)*
+**Demo page:** (https://mondal-anindita.github.io/Dakhini/)
 
 ---
 

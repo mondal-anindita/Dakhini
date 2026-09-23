@@ -243,7 +243,7 @@
     <div><dt>Speakers</dt><dd>160</dd></div>
     <div><dt>Age range</dt><dd>17–50</dd></div>
     <div><dt>Male : female</dt><dd>70:30</dd></div>
-    <div><dt>Retained per session</dt><dd>~5 min</dd></div>
+    <div><dt>Retained per session</dt><dd>~2-5 min</dd></div>
   </dl>
 
   <hr class="div">
@@ -252,9 +252,6 @@
     <h2>Audio samples</h2>
     <p class="section-note">
       Target-speaker segments from telephonic conversations between familiar mixed-gender pairs.
-      The anchor speaker's audio is excluded. Each clip lists the rule-based tags that fire in it;
-      transcripts give the Dakhini realisation, the standard Hindi/Urdu form it diverges from, and
-      an English gloss. Nothing downloads until you press play.
     </p>
 
     <!-- ================= SAMPLE 1 ================= -->
@@ -335,7 +332,76 @@
     </article>
 
   </section>
-
+  <hr class="div">
+ 
+  <section>
+    <h2>Annotation scheme</h2>
+    <p class="section-note">Seven rule-based detection modules run over the standard-Hindi ASR
+      pre-transcription. Where the transcription and the audio disagree systematically, the
+      region is flagged as a candidate dialectal cue rather than corrected as an error.</p>
+    <table>
+      <thead><tr><th>Tag</th><th>Detects</th></tr></thead>
+      <tbody>
+        <tr><td class="code">PA</td><td>Phonological assimilation</td></tr>
+        <tr><td class="code">PV</td><td>Vowel-length reduction</td></tr>
+        <tr><td class="code">MAUX</td><td>Auxiliary omission</td></tr>
+        <tr><td class="code">MP-KO</td><td>Participial <em>ko</em> in place of <em>kar</em></td></tr>
+        <tr><td class="code">MP</td><td>Pronoun variation</td></tr>
+        <tr><td class="code">SF</td><td>Formality register marker</td></tr>
+        <tr><td class="code">LD</td><td>Dakhini-specific lexical item</td></tr>
+      </tbody>
+    </table>
+    <p class="section-note" style="margin:1.1rem 0 0">
+      <code>MAUX</code> requires parse-level rather than string-level matching. Segments flagged on
+      several rules at once are prioritised for detailed human review.</p>
+  </section>
+ 
+  <hr class="div">
+ 
+  <section id="variants">
+    <h2>Full variant set</h2>
+    <p class="section-note">Every standard Hindi/Urdu form and its Dakhini realization covered by
+      the rule set, grouped by linguistic layer. The poster carries two exemplars per rule; this is
+      the complete table.</p>
+ 
+    <div class="tablewrap">
+    <table class="variants">
+      <thead>
+        <tr><th>Standard Hindi/Urdu form</th><th>Dakhini realization</th><th>Tag</th></tr>
+      </thead>
+      <tbody>
+ 
+        <tr class="grp"><th colspan="3" scope="colgroup">Phonological rules</th></tr>
+        <tr><td class="std">itnaa <span class="gloss">(how much)</span></td><td class="dak">ittaa</td><td class="t"><span class="pill">PA</span></td></tr>
+        <tr><td class="std">jitnaa <span class="gloss">(however much)</span></td><td class="dak">jittaa</td><td class="t"><span class="pill">PA</span></td></tr>
+        <tr><td class="std">itnaa hi <span class="gloss">(that's all)</span></td><td class="dak">ittaich</td><td class="t"><span class="pill">PA</span></td></tr>
+        <tr><td class="std">us zamaane <span class="gloss">(in those days)</span></td><td class="dak">uzzamaane</td><td class="t"><span class="pill">PA</span></td></tr>
+        <tr><td class="std">aadmii</td><td class="dak">admii</td><td class="t"><span class="pill">PV</span></td></tr>
+        <tr><td class="std">acchaa</td><td class="dak">accha</td><td class="t"><span class="pill">PV</span></td></tr>
+        <tr><td class="std">bataao</td><td class="dak">batau</td><td class="t"><span class="pill">PV</span></td></tr>
+        <tr><td class="std">DhuunD</td><td class="dak">Dhund</td><td class="t"><span class="pill">PV</span></td></tr>
+ 
+        <tr class="grp"><th colspan="3" scope="colgroup">Morphosyntactic rules</th></tr>
+        <tr><td class="std">wo jaa rahe hai</td><td class="dak">woh jaa rahe</td><td class="t"><span class="pill">MAUX</span></td></tr>
+        <tr><td class="std">usne diye the</td><td class="dak">une diye</td><td class="t"><span class="pill">MAUX</span></td></tr>
+        <tr><td class="std">woh gaye hai</td><td class="dak">woh gaye</td><td class="t"><span class="pill">MAUX</span></td></tr>
+        <tr><td class="std">main khaa kar aaya</td><td class="dak">main khaa ko aaya</td><td class="t"><span class="pill">MP-KO</span></td></tr>
+        <tr><td class="std">mujh se</td><td class="dak">mere se</td><td class="t"><span class="pill">MP</span></td></tr>
+        <tr><td class="std">unheN</td><td class="dak">une</td><td class="t"><span class="pill">MP</span></td></tr>
+        <tr><td class="std">inheN</td><td class="dak">ine</td><td class="t"><span class="pill">MP</span></td></tr>
+        <tr><td class="std">aap</td><td class="dak">tum / tu</td><td class="t"><span class="pill">SF</span></td></tr>
+ 
+        <tr class="grp"><th colspan="3" scope="colgroup">Code-switching and lexical layer</th></tr>
+        <tr><td class="std">kyon <span class="gloss">(why)</span></td><td class="dak">kaiku</td><td class="t"><span class="pill">LD</span></td></tr>
+        <tr><td class="std">mat karo <span class="gloss">(don't)</span></td><td class="dak">nakko karo</td><td class="t"><span class="pill">LD</span></td></tr>
+        <tr><td class="std">mein / ke andar <span class="gloss">(in / among)</span></td><td class="dak">manjhe</td><td class="t"><span class="pill">LD</span></td></tr>
+        <tr><td class="std">dhire se <span class="gloss">(slowly / gently)</span></td><td class="dak">haule</td><td class="t"><span class="pill">LD</span></td></tr>
+ 
+      </tbody>
+    </table>
+    </div>
+  </section>
+ 
  
 
   <section>
@@ -357,9 +423,8 @@
   <footer id="access">
     <p><strong>Participants and consent.</strong> Every speaker was debriefed after recording and
       gave explicit informed consent before any audio was retained. Sessions where consent was
-      withheld were discarded in full. Participants may withdraw their data at any time.</p>
-    <p><strong>Access.</strong> The clips on this page are released for research use. Access to the
-      wider corpus is by request, subject to the consent terms above.</p>
+      withheld were discarded in full.</p>
+   
     <p>Anindita Mondal — anindita.mondal@research.iiit.ac.in<br>
        Priyanka Kommagouni — parvathipriyanka86@gmail.com</p>
   </footer>
